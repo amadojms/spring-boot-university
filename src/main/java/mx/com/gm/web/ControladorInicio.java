@@ -21,7 +21,7 @@ public class ControladorInicio {
     @GetMapping("/")
     public String inicio(Model model){
         var personas = personaService.listarPersonas();
-        log.info("ejecutando el controlador Spring MVC");
+        // log.info("ejecutando el controlador Spring MVC");
         model.addAttribute("personas", personas);
         return "index";
     }
